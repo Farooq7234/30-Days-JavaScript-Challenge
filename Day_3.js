@@ -14,6 +14,8 @@ else if (num === 0) {
     console.log(`the number ${num} is a negative number`);
 }
 
+// Output: the number 10 is a positive number 
+
 // Task 2: Write a program to check if a person is eligible to vote (age >= 18) and log the result to the  console
 
 const age = 18;
@@ -26,6 +28,7 @@ else {
     console.log("You are not eligible for vote")
 }
 
+// Output: You are eligible for vote
 
 // Activity 2: Nested If-Else statements
 
@@ -49,6 +52,7 @@ if (a >= b) {
     }
 }
 
+// Output => c is the greatest
 
 // Activity 3: Switch Case
 
@@ -84,6 +88,8 @@ switch (key) {
         break;
 }
 
+// Output => Tuesday
+
 // Task 5: Write a program that uses a switch case to assign a grade ("A","B","C","D","F") based on a score and log the grade to the console
 
 let studentMark = 10;
@@ -114,6 +120,8 @@ switch (true) {
         console.log("Your Marks are invalid")
 }
 
+// Output =>  F
+
 
 // Activity 4: Conditional (Ternary) Operator
 
@@ -122,10 +130,26 @@ switch (true) {
 
 const isOddOrEven = 3
 const result = isOddOrEven % 2 == 0 ?  "Even" : "Odd"
-console.log(result)
-
+console.log(result) // Odd
+  
 
 // Activity 5: Combining Conditions
 
 // Task 7: Write a program to check if a year is a leap year using multiple conditions (divisible by 4, but not 100 unless also divisible by 400) and log the result to the console
 
+
+let year = 2024;
+
+if (year % 4 === 0) {
+    if (year % 100 === 0) {
+        if (year % 400 === 0) {
+            console.log(`${year} is a leap year`);
+        } else {
+            console.log(`${year} is not a leap year`);
+        }
+    } else {
+        console.log(`${year} is a leap year`);
+    }
+} else {
+    console.log(`${year} is not a leap year`); // 2024 is a leap year
+}
